@@ -9,19 +9,92 @@ body {
 }
 
 /* Headings */
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
 
-/* Header */
+/* Header Section */
 header {
   text-align: center;
+  display: flex; /* Uses flexbox to layout content in a row */
+  flex-direction: row; /* Stacks elements within Flex in horizontal row */
+  justify-content: center; /* Centers items within flex parameters */
+  align-items: center; /* Centers items within flex parameters */
+}
+
+h1, nav {
+  margin: 0; /* Removes margin from h1 and nav */
+}
+
+/* About Section */
+article#about > section {
+  display: flex; /* Uses flexbox to layout content in a row */
+  justify-content: center; /* Centers items within flex parameters */
+}
+
+.content-wrapper {
+  display: flex; /* Use flexbox for content within the wrapper */
+  align-items: center; /* Centers items within flex parameters */
+}
+
+.image-container {
+  margin-right: 20px; /* Adjusts spacing between image and text */
+}
+
+.text-container {
+  text-align: left; /* Aligns text to the left */
+}
+
+.text-container p {
+  margin: 10px 0; /* Adjusts spacing between paragraphs */
+}
+
+.background-section {
+  text-align: center; /* Centers the content within the section */
+  flex-direction: column; /* Uses flexbox to layout content in a column */
+}
+
+.background-section h3 {
+  margin-bottom: 10px; /* Add margins at the bottom to separate paragraphs */
+}
+
+.paragraphs {
+  text-align: left; /* Align paragraphs to the left */
+}
+
+/* Portfolio Section */
+#portfolio {
+  text-align: center; /* Center the content within the portfolio section */
+}
+
+.project-list {
+  display: flex; /* Use flexbox for content within the wrapper */
+  justify-content: center; /* Centers items within flex parameters */
+}
+
+.project {
+  margin: 0 10px; /* Adds spacing between projects */
+  max-width: 300px; /* Sets maximum width of each project */
+}
+
+.project img {
+  width: 100%; /* Ensures images fill the container */
+  max-width: 100%; /* Ensures images don't exceed the container's width */
+}
+
+.project h3 {
+  margin-bottom: 5px; /* Adds some space below the project title */
+  margin-bottom: 20px; /* Adds some vertical spacing below the project list */
+}
+
+.project p {
+  margin-top: 15px; /* Adds some space above the project description */
+  font-size: 14px; /* Sets the font size of project descriptions to 14px */
 }
 
 /* Containers */
+
 div {
   background-color: #eae2b7;
   margin: auto;
